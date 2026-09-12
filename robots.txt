@@ -1,0 +1,91 @@
+# ==========================================
+# robots.txt for Top Cute Girls
+# Website: https://topcutegirls.org/
+# Updated: 2026-09-12
+# Purpose: Maximum Google SEO Crawlability & AI Search Optimization
+# ==========================================
+
+# ------------------------------------------
+# 1. Global Search Engine Crawlers (Googlebot, Bingbot, Yahoo, DuckDuckBot, etc.)
+# ------------------------------------------
+User-agent: *
+Allow: /
+Allow: /dehradun
+Allow: /mussoorie
+Allow: /rishikesh
+Allow: /haldwani
+Allow: /nainital
+Allow: /ramnagar
+Allow: /rudrapur
+Allow: /bhimtal
+Allow: /public/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.webp$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.svg$
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /sitemap.xml
+
+# Disallow administrative, private, and internal framework directories
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /_vercel/
+Disallow: /.vscode/
+Disallow: /.git/
+
+# Prevent indexing duplicate pages created via tracking or sorting query parameters
+Disallow: /*?*
+
+# ------------------------------------------
+# 2. Google-Specific Crawlers (Ensure 100% Mobile & Image Crawl Rendering)
+# ------------------------------------------
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /public/
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# ------------------------------------------
+# 3. AI / LLM Search & Retrieval Crawlers (ChatGPT, SearchGPT, Perplexity, Claude, Apple AI)
+# Explicitly ALLOW to maximize citations in AI Overviews & Generative Search
+# ------------------------------------------
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+# ------------------------------------------
+# 4. XML Sitemap & AI Knowledge Context Directives
+# ------------------------------------------
+Sitemap: https://topcutegirls.org/sitemap.xml
+# LLM Knowledge Reference: https://topcutegirls.org/llms.txt
